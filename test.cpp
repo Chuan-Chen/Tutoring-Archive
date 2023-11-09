@@ -1,30 +1,20 @@
 #include <iostream>
 using namespace std;
 
-
-
 int main() {
 
-    char s;
-
-    cout << "input char: ";
-
-    cin >> s; 
-
-
-    switch(s){
-        case 'c': 
-            cout << "hi" << endl;
-            break;
-        case 'b': 
-            cout << "bye" << endl;
-            break;
-        
-
+    int size = 11;
+    for(int r = 1; r <= size; r++){
+        for(int c = 1; c <= size; c++){
+            if(c == size + 1 - r){
+                cout << "x ";
+            }
+            else{
+                cout << "- ";
+            }
+        }
+        cout << endl;
     }
-    
-
-
 
     return 0;
 };
