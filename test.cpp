@@ -1,20 +1,41 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+struct Inventory{
+    string item = "Default sword";
+};
 
-    int size = 11;
-    for(int r = 1; r <= size; r++){
-        for(int c = 1; c <= size; c++){
-            if(c == size + 1 - r){
-                cout << "x ";
-            }
-            else{
-                cout << "- ";
-            }
-        }
-        cout << endl;
+struct Player{
+    private:
+    string Name = "NA";
+    Inventory inventory1;
+
+    public:
+    Player(string n): Name(n){};
+    Inventory getInventory(){
+        return inventory1;
+    }
+};
+
+struct Game{
+    Player p1{playerName};
+    string playerName;  
+
+    Game(string n): playerName(n){};
+    Game(): playerName("NA"){};
+    Player getPlayer(){
+        return p1;
     }
 
-    return 0;
 };
+
+
+int main(){
+
+    Game GTA{};
+    
+    cout << GTA.getPlayer().getInventory().item << endl;
+    cout << GTA.playerName;
+
+    return 0;
+}

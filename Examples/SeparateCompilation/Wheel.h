@@ -5,9 +5,10 @@
 struct Wheel{
     float thickness;
     float diameter;
-    std::string wheelPosition;
+    std::string wheelPosition; 
 
     Wheel();
+    ~Wheel();
     Wheel(float t, float d, std::string n); 
     
     void print();
