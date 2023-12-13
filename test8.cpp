@@ -26,7 +26,7 @@ type1 add(type1 a, type2 b){
 
 int main(){
 
-    cout << add("hi",5.213) << endl;
+    cout << add("hi" , 5.213) << endl;
     
     cout << "hi " << "bye" << endl;
 
