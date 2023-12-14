@@ -14,13 +14,15 @@ class Node{
     }
 };
 
+//node1 -> node2 -> node3 -> nullptr
+
 class List{
     public: 
     Node *head;
     Node *current;
 
     List():head(new Node(10)), current(head){};//constructor
-    ~List() //destructor
+    ~List(){}; //destructor
 
 
     void append(int value){
@@ -53,6 +55,7 @@ int main(){
 
     L1.print();
 
+    Node n1{};
 
 
     //&p mem of pointer p
