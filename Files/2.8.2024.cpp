@@ -26,7 +26,8 @@ int main(){
     int b = 20;
 
     std::cout << "&b: " << &b << std::endl;
-
+    //what does this print out
+    //&b = ??? Memory address
 
     func(b);
 
