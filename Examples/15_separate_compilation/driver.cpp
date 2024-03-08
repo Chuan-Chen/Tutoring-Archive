@@ -1,6 +1,7 @@
 // S. Trowbridge 2023
 #include <iostream>                 // include requisite files
 #include "Student.h"
+#include "Car.h"
 
 int main()                          // driver program contains a main function to test/run the program
 {
@@ -8,7 +9,7 @@ int main()                          // driver program contains a main function t
 
     const int SIZE = 3;
     Student students[5];            // array of student objects
-
+    Car car;
     students[0].name = "John";      // store data into each student object
     students[0].id = 14141414;
     students[1].name = "Kim";

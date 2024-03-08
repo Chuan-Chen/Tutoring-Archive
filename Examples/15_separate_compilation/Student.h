@@ -6,7 +6,7 @@
 
 struct Student                      
 {
-    std::string name;               
+    std::string name;              
     int id;                         
     
     Student();                      // member function declaration
